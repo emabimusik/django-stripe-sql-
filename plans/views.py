@@ -8,7 +8,7 @@ from django.contrib.auth.decorators import login_required, user_passes_test
 import stripe
 from django.http import HttpResponse
 
-stripe.api_key ='sk_test_8qswaFfGiId5OGpetqICihyf00LuUmTFsw'
+stripe.api_key ='sk'
 
 @user_passes_test(lambda u: u.is_superuser)
 def updateaccounts(request):
